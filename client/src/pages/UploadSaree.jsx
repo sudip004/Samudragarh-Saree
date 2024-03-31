@@ -20,7 +20,7 @@ const UploadSaree = () => {
     formdata.append("stock", stock);
     formdata.append("mobileNumber", mobilenumber);
     formdata.append("file", file);
-       const success= await axios.post('http://localhost:3000/api/upload/saree',formdata)
+       const success= await axios.post('https://samudragarh-saree.vercel.app/api/upload/saree',formdata)
        if(success){
            console.log(success)
            navigate('/')
