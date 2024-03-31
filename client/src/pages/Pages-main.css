@@ -1,0 +1,255 @@
+.card-container{
+height: 210px;
+width: 150px;
+border-radius: 20px;
+padding: 10px 10px;
+border: 2px solid black;
+box-shadow: 8px 5px 5px gray;
+cursor: pointer;
+overflow: hidden;
+}
+.card{
+height: 60%;
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+margin-top: 20px;
+}
+.card-header{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.card-header > img{
+height: 80px;
+width: 80px;
+padding: 5px 5px;
+box-shadow: 8px 8px 8px #FFF;
+border-radius: 20px;
+}
+.card-footer{
+
+top:40%;
+display: flex;
+flex-direction: column;
+
+}
+.card-footer > p{
+font-size: 15px;
+font-weight: 600;
+}
+.card > button{
+padding: 5px 10px;
+border-radius: 20px;
+background-color: blueviolet;
+color: #FFF;
+font-weight: 600;
+cursor: pointer;
+width: 100%;
+border: none ;
+
+}
+
+.ami{
+    height: 110px;
+    width: 110px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    background-color: blue;
+}
+
+
+
+/* -----------------------------UPLOAD-SAREE-page  ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+.main-container{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.box-container{
+    height: 500px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    gap: 20px;
+}
+
+.form-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-container > div > input {
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.form-container > button {
+    height: 30px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: blueviolet;
+    color: #FFF;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .form-container > div > input,
+    .form-container > button {
+        height: 40px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+    .form-container {
+        width: 80%;
+        gap: 15px;
+    }
+
+    .form-container > div > input,
+    .form-container > button {
+        height: 35px;
+        width: 90%;
+        padding: 8px 16px;
+    }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 900px) {
+    .form-container {
+        width: 70%;
+        gap: 20px;
+    }
+
+    .form-container > div > input,
+    .form-container > button {
+        height: 30px;
+        width: 80%;
+        padding: 5px 10px;
+    }
+
+
+}
+
+    /* -------------------------Calculator----------------------- */
+
+    .calculator {
+        border: 2px solid #333;
+        border-radius: 15px;
+        padding: 10px;
+        width: 300px;
+        height: 70%;
+      }
+      
+      #display {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+      }
+      
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+      }
+      
+      button {
+        padding: 10px;
+        font-size: 1.2em;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+      }
+      
+
+      /* ---------------------------Online-Payment-------------------- */
+
+
+      .payment-section {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        height: 70%;
+      }
+      
+      .card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card-input {
+        margin-bottom: 15px;
+      }
+      
+      .card-input label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .card-input input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .pay-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .pay-button:hover {
+        background-color: #0056b3;
+      }
+      
+

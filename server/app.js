@@ -1,23 +1,34 @@
 const express = require('express'); 
 const app = express();
-const port = 3000;
 const path = require('path');
 const cors = require('cors');
-const cookieParser = require('cookie-parser');
-
+const dotenv = require("dotenv")
+// let __dirname = path.resolve();
+dotenv.config()
+const port = process.env.PORT;
 // For DataBase connected
 const { ConnectDB } = require('./utils/db');
 // Gest Routers
-// const Users = require('./routes/Users');
+const Sharees = require("./routes/Sharees")
 
 // All Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/uploads', express.static('uploads'));
+app.use(express.static(path.join(path.resolve(), "/client/dist")));
 
 // For Routes puspose
-// app.use('/api',Users);
+app.use('/api',Sharees);
+
+app.get("*", (req, res) => {
+	res.sendFile(path.join(path.resolve(), "client", "dist", "index.html"));
+});
 
 app.listen(port, async() => {
    await ConnectDB();
     console.log(`Server is running on port ${port}`);
 });
+
+//MmNf1sIsGEsEyhnI
+//sudipbasakk1234
