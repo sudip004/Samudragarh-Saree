@@ -17,7 +17,7 @@ const Productcontainer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await axios.get("https://samudragarh-saree.onrender.com/api/saree");
+      const data = await axios.get("http://localhost:3000/api/saree");
       setSareeData(data.data);
     };
     fetchData();
