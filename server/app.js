@@ -5,7 +5,7 @@ const cors = require('cors');
 const dotenv = require("dotenv")
 // let __dirname = path.resolve();
 dotenv.config()
-const port = process.env.PORT;
+const port = 3000;
 // For DataBase connected
 const { ConnectDB } = require('./utils/db');
 // Gest Routers
