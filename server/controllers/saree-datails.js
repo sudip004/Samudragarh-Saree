@@ -2,15 +2,15 @@
 const { SareeModel } = require("../models/sraee-model");
 
 const GetSaree = async (req, res) => {
-  // try {
-  //   const data = await SareeModel.find();
-  //   if (!data) {
-  //     return res.status(404).json({ message: "get saree not found" });
-  //   }
-    return res.status(200).json({message:"hellow"});
-  // } catch (error) {
-  //   res.status(500).json({ error });
-  // }
+  try {
+    const data = await SareeModel.find();
+    if (!data) {
+      return res.status(404).json({ message: "get saree not found" });
+    }
+    return res.status(200).json(data);
+  } catch (error) {
+    res.status(500).json({ error });
+  }
 };
 
 const UploadSraee = async (req, res) => {
