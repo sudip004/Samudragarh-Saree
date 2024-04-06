@@ -8,7 +8,7 @@ export default defineConfig({
 		port: 3000,
 		proxy: {
 			"/api": {
-				target: "https://samudragarh-saree-s3bv.vercel.app",
+				target: "http://localhost:3000",
 			},
 		},
 	},
