@@ -17,7 +17,7 @@ const Productcontainer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await axios.get("/api/saree");
+      const data = await axios.get("https://samudragarh-saree-s3bv.vercel.app/api/saree");
       setSareeData(data.data);
     };
     fetchData();
