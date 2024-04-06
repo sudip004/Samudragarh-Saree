@@ -12,7 +12,9 @@ const { ConnectDB } = require('./utils/db');
 const Sharees = require("./routes/Sharees")
 
 // All Middlewares
-app.use(cors());
+app.use(cors({
+    origin: 'https://samudragarh-saree-s3bv.vercel.app'
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
